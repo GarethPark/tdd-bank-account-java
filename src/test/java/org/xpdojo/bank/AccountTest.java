@@ -14,4 +14,9 @@ public class AccountTest {
         account.withDraw(100);
         assertThat(account.getBalance()).isEqualTo(100);
     }
+    public void depositAmount(){
+        Account account = new Account();
+        account.deposit(100);
+        assertThat(account.getBalance()).isEqualTo(100);
+    }
 }
